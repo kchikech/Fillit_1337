@@ -10,4 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef FILLIT_H
+#define FILLI_H
 #include "get_next_line.h"
+
+#endif

@@ -11,7 +11,16 @@
 /* ************************************************************************** */
 
 #ifndef FILLIT_H
-#define FILLI_H
-#include "get_next_line.h"
+#define FILLIT_H
+#include "libft/libft.h"
+#include <fcntl.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <stdio.h>
+# define BUFF_SIZE 600
+
+char	*read_tetriminos_file(int fd);
+int     max_tetriminos(const char *tetris_file);
+int    check_chars(const char *tetris_file);
 
 #endif

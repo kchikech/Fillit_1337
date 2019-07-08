@@ -22,5 +22,11 @@
 char	*read_tetriminos_file(int fd);
 int     max_tetriminos(const char *tetris_file);
 int    check_chars(const char *tetris_file);
+int    check_line(char **tetris);
+int		related_blocks(char **tetris);
+int		tetris_number(char *tetris_file);
+int     newlinesnblocks_number(const char *line,int nb);
+int     is_valid(int nb, char *tetris_file, char **tetris);
+//char	**split(char *tetris_file, int nb);
 
 #endif
